@@ -1,0 +1,40 @@
+{
+  "name": "fms-backend",
+  "version": "1.0.0",
+  "description": "Facility Management System Backend API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint src/",
+    "migrate": "node src/database/migrate.js"
+  },
+  "keywords": ["facility", "management", "system", "api"],
+  "author": "ithelpdesk78",
+  "license": "Proprietary",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-cors": "^0.1.0",
+    "pg": "^8.10.0",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.1.0",
+    "bcryptjs": "^2.4.3",
+    "multer": "^1.4.5-lts.1",
+    "joi": "^17.11.0",
+    "express-validator": "^7.0.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.1",
+    "axios": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.53.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
